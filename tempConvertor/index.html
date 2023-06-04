@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Temp Convertor</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+        <style>
+            body
+            {
+                place-items: center;
+            }
+        </style>
+    </head>
+    <body>
+        <form id="tempCalc" onsubmit="calculateTemp(); return false">
+            <label for="temp">Please enter the temperature for conversion</label>
+            <br/><input type="number" name="temp" id="temp">
+            <select name="temp_diff" id="temp_diff">
+                <option value="cel">`Celcius</option>
+                <option value="fah">`Fahrenheit</option>
+            </select>
+            <br/>
+            <br/>
+            <input type="submit" name="temp"><br/>
+            <br/>
+            <span id="resultContainer"></span>
+        </form>
+
+
+        <script src="script.js"></script>
+    </body>
+</html>
